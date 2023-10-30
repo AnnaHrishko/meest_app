@@ -341,14 +341,15 @@ body{
                     letter-spacing: 0.4px;
                     text-transform: uppercase;
                     margin-bottom: 10px;
+                    &.bigger-fsize{
+                        font-size: 34px;
+                        @include maxWidth768(){
+                            font-size: 24px;
+                        }
+                    }
                     @include maxWidth768(){
                         font-size: 17px;
                         letter-spacing: 0.34px;
-                    }
-                }
-                .main-heading{
-                    @include maxWidth768(){
-                        font-size: 24px;
                     }
                 }
             }

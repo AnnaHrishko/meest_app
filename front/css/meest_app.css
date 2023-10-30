@@ -2601,15 +2601,18 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.register-wrapper__row .main-part__text h3.bigger-fsize {
+  font-size: 34px;
+}
+@media screen and (max-width: 768px) {
+  .register-wrapper__row .main-part__text h3.bigger-fsize {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 768px) {
   .register-wrapper__row .main-part__text h3 {
     font-size: 17px;
     letter-spacing: 0.34px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .register-wrapper__row .main-part__text .main-heading {
-    font-size: 24px;
   }
 }
 
