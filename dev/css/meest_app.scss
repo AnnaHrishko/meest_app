@@ -330,6 +330,10 @@ body{
                 background: #EFF1F4;
                 padding: 30px;
                 width: 100%;
+                min-height: 200px;
+                @include maxWidth991(){
+                    min-height: unset;
+                }
                 @include maxWidth768(){
                     padding: 20px;
                 }
