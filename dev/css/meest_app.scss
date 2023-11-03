@@ -103,33 +103,6 @@ body{
                     margin-bottom: 20px;
                 }
             }
-            .links-online-store{
-                margin-bottom: 30px;
-                display: flex;
-                @include maxWidth991(){
-                    margin-bottom: 20px;
-                }
-                a{
-                    width: 208px;
-                    @include maxWidth768(){
-                        width: 140px;
-                    }
-                    &:first-of-type{
-                        width: 190px;
-                        margin-right: 5px;
-                        @include maxWidth768(){
-                            width: 130px;
-                        }
-                    }
-                    img{
-                        width: 100%;
-                        height: 60px;
-                        @include maxWidth768(){
-                            height: 50px;
-                        }
-                    }
-                }
-            }
         }
         .subheading{
             width: 70%;
@@ -174,6 +147,33 @@ body{
         }
     }
 }
+.links-online-store-app{
+    margin-bottom: 30px;
+    display: flex;
+    @include maxWidth991(){
+        margin-bottom: 20px;
+    }
+    a{
+        width: 208px;
+        @include maxWidth768(){
+            width: 140px;
+        }
+        &:first-of-type{
+            width: 190px;
+            margin-right: 5px;
+            @include maxWidth768(){
+                width: 130px;
+            }
+        }
+        img{
+            width: 100%;
+            height: 60px;
+            @include maxWidth768(){
+                height: 50px;
+            }
+        }
+    }
+}
 .promocode-sec{
     background-color: #fff;
     padding: 23px 0;
@@ -215,7 +215,7 @@ body{
             padding: 18px 20px 20px 30px;
             margin-bottom: 15px;
             @include maxWidth768(){
-                padding: 15px;
+                padding: 12px 16px;
                 border-radius: 12px;
             }
             &__name{
@@ -229,6 +229,7 @@ body{
                 @include maxWidth768(){
                     font-size: 20px;
                     letter-spacing: 4px;
+                    margin-right: 100px;
                 }
             }
             .btn-copy-click{
@@ -449,6 +450,87 @@ body{
             line-height: 140%; /* 23.8px */
             letter-spacing: 0.34px;
             text-transform: uppercase;
+        }
+    }
+}
+.sec-sale-delivery{
+    background-color: #DEEBF5;
+    padding-top: 43px;
+    .d-flex{
+        @include maxWidth991(){
+            flex-direction: column;
+        }
+    }
+    &__text{
+        width: 42%;
+        padding-top: 30px;
+        @include maxWidth991(){
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include maxWidth768(){
+            width: 100%;
+            padding-top: 0;
+        }
+        .main-heading{
+            margin-bottom: 30px;
+            @include maxWidth768(){
+                margin-bottom: 20px;
+            }
+        }
+        .subheading{
+            margin-bottom: 85px;
+            @include maxWidth991(){
+                margin-bottom: 40px;
+            }
+            @include maxWidth768(){
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__img{
+        width: 20%;
+        display: flex;
+        vertical-align: bottom;
+        position: absolute;
+        z-index: 2;
+        left: 10px;
+        bottom: 0;
+        @include maxWidth991(){
+            display: none;
+        }
+    }
+    &__promocode{
+        width: calc(58% - 35px);
+        margin-left: 35px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: relative;
+        @include maxWidth991(){
+            width: 60%;
+            margin: 0 auto 40px;
+            align-items: center;
+        }
+        @include maxWidth768(){
+            width: 100%;
+        }
+        .promocode-sec__text{
+            width: 80%;
+            background-color: #fff;
+            padding: 36px 71px;
+            border-radius: 20px;
+            position: relative;
+            @include maxWidth991(){
+                width: 100%;
+            }
+            @include maxWidth768(){
+                padding: 25px 37px;
+            }
         }
     }
 }
